@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekonomi Nasional dan Kesejahteraan Sosial di UUD 1945</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <h1>Kelompok 4</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">Tentang UUD 1945</a></li>
+        <li><a href="#economy">Ekonomi Nasional</a></li>
+        <li><a href="#welfare">Kesejahteraan Sosial</a></li>
+        <li><a href="#kkn">Pemberantasan KKN</a></li>
+        <li><a href="#team">Meet Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+</nav>
+
+
+
+<!-- Banner Section -->
+<section class="banner" id="home">
+    <div class="banner-overlay">
+        <div class="banner-content">
+            <h1>Selamat Datang di Ekonomi Nasional</h1>
+            <p>Mewujudkan keadilan sosial dan kemakmuran untuk seluruh rakyat Indonesia.</p>
+            <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+    </div>
+</section>
+
+
+<main>
+    <section id="about" class="content-section">
+<!-- Slideshow -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <h2>Ekonomi Nasional</h2>
+        <p>Menjelajahi dasar-dasar ekonomi dalam UUD 1945.</p>
+    </div>
+    <div class="mySlides fade">
+        <h2>Kesejahteraan Sosial</h2>
+        <p>Fokus pada keadilan sosial dan akses untuk semua.</p>
+    </div>
+    <div class="mySlides fade">
+        <h2>Pemberantasan KKN</h2>
+        <p>Langkah-langkah untuk mengatasi korupsi dan nepotisme.</p>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-button">Sejarah</button>
+        <div class="accordion-content">
+            <p>UUD 1945 disusun pada tahun 1945 untuk menciptakan pemerintahan yang demokratis dan adil, serta menjamin hak-hak rakyat.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-button">Tujuan</button>
+        <div class="accordion-content">
+            <p>Mewujudkan keadilan sosial bagi seluruh rakyat Indonesia, termasuk pemerataan ekonomi dan akses pendidikan.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-button">Relevansi</button>
+        <div class="accordion-content">
+            <p>Menjalin hubungan antara ekonomi dan kesejahteraan sosial dalam kerangka hukum dan kebijakan publik.</p>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+    
+    <section id="economy" class="content-section">
+        <h2>Ekonomi Nasional dalam UUD 1945</h2>
+        <p>Pasal 33 UUD 1945 menegaskan perekonomian disusun sebagai usaha bersama.</p>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">Prinsip Ekonomi</button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">Implementasi</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Tantangan</button>
+        </div>
+        <div id="tab1" class="tab-content active">
+            <p>Dasar ekonomi kita adalah asas kekeluargaan yang menjunjung keadilan.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <p>Program pemerintah mencakup pengelolaan sumber daya yang efisien.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <p>Tantangan yang dihadapi termasuk korupsi dan ketidakadilan sosial.</p>
+        </div>
+    </section>
+
+    <section id="welfare" class="content-section">
+        <h2>Kesejahteraan Sosial</h2>
+        <div class="key-points">
+            <div class="point">
+                <img src="icon-education.png" alt="Pendidikan" class="icon">
+                <h3>Pendidikan</h3>
+                <p>Memastikan akses pendidikan berkualitas bagi semua lapisan masyarakat.</p>
+            </div>
+            <div class="point">
+                <img src="icon-health.png" alt="Kesehatan" class="icon">
+                <h3>Kesehatan</h3>
+                <p>Memberikan layanan kesehatan yang terjangkau dan berkualitas.</p>
+            </div>
+            <div class="point">
+                <img src="icon-protection.png" alt="Perlindungan" class="icon">
+                <h3>Perlindungan Sosial</h3>
+                <p>Menjamin hak-hak dasar masyarakat untuk perlindungan sosial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kkn" class="content-section">
+        <h2>Ketetapan MPR dan Penyelenggaraan Negara</h2>
+        <p>Ketetapan MPR merupakan pedoman penting dalam memastikan penyelenggaraan negara yang bersih dan efektif. Prinsip-prinsip ini menjadi landasan bagi pembangunan sistem pemerintahan yang transparan dan akuntabel. Berikut adalah tiga prinsip utama yang perlu diterapkan:</p>
+        
+        <div class="principles">
+            <div class="principle-item">
+                <h3>1. Akuntabilitas</h3>
+                <p>Pengelolaan yang dapat dipertanggungjawabkan adalah kunci untuk membangun kepercayaan masyarakat. Setiap tindakan dan keputusan pemerintah harus dapat dijelaskan dan dipertanggungjawabkan kepada publik.</p>
+            </div>
+            
+            <div class="principle-item">
+                <h3>2. Transparansi</h3>
+                <p>Keterbukaan dalam setiap proses pengambilan keputusan memungkinkan masyarakat untuk memahami dan mengawasi kebijakan yang diambil. Transparansi membantu mengurangi praktik korupsi dan meningkatkan partisipasi masyarakat.</p>
+            </div>
+            
+            <div class="principle-item">
+                <h3>3. Partisipasi</h3>
+                <p>Partisipasi masyarakat dalam pengawasan pemerintahan merupakan langkah penting dalam menciptakan sistem yang demokratis. Masyarakat harus dilibatkan dalam proses pengambilan keputusan untuk memastikan bahwa suara mereka didengar dan diperhatikan.</p>
+            </div>
+        </div>
+    
+        <p><strong>Ayo berkontribusi untuk menciptakan pemerintahan yang bersih dan berintegritas!</strong></p>
+    </section>
+    
+
+    <section id="conclusion" class="content-section">
+        <h2>Kesimpulan</h2>
+        <p>Pentingnya integritas dalam penyelenggaraan negara untuk mencapai kesejahteraan sosial.</p>
+        <p><strong>Ayo berpartisipasi dalam gerakan anti-KKN demi masa depan yang lebih baik!</strong></p>
+    </section>
+</main>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-links">
+        <a href="section3.html">Home</a>
+        <a href="#about">Tentang UUD 1945</a>
+        <a href="#economy">Ekonomi Nasional</a>
+        <a href="#welfare">Kesejahteraan Sosial</a>
+        <a href="#kkn">Pemberantasan KKN</a>
+        <a href="#team">Meet Our Team</a>
+    </div>
+    <p>© 2024 Ekonomi Nasional dan Kesejahteraan Sosial. All rights reserved.</p>
+</footer>
+
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     
+    </div>
+    
+    <!-- Main content here -->
+    <div id="main-content" style="display:none;">
+        <!-- Your existing content -->
+    </div>
+    
+    <div class="carousel" id="carousel">
+        <div class="carousel-images">
+            <div class="slide">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2022/10/14/pasal-dalam-uud-1945-yang-terkai-20221014091323.jpg" alt="Image 1">
+                <div class="text-overlay" onclick="showSection('section1')">
+                    <h2>Ekonomi Nasional Dan Kesejahteraan Sosial Pada UUD 1945</h2>
+                    <p>Description for Image 1.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://img.inews.co.id/media/600/files/inews_new/2022/07/19/ilustrasi_korupsi.jpg" alt="Image 2">
+                <div class="text-overlay" onclick="showSection('section2')">
+                    <h2>ketetapan mpr tentang penyelenggaraan negara yang bersih dan bebas dari korupsi kolusi dan nepotisme (KKN)</h2>
+                    <p>Description for Image 2.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Image 3">
+                <div class="text-overlay" onclick="showSection('section3')" >
+                    <h2><a href="section3.html" style="text-decoration: none; color: white;"> hubungan isi uud 1945 soal ekonomi dengan TAP MPR tentang penyelengara negara bersih</a></h2>
+                    <p>Description for Image 3.</p>
+               
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    
+<!-- Hidden Section 1 -->
+<div class="hidden-section" id="section1">
+    <div class="nav-section">
+        <ul>
+            <li><a href="index.html" onclick="showCarousel()">Kmbali</a></li>
+            <li><a href="#section1">Overview</a></li>
+            <li><a href="#section1-team">Tim</a></li>
+            <li><a href="#section1-resources">Materi</a></li>
+        </ul>
+    </div>
+
+    <div >
+    <div class="banner-section">
+        <h2>Ekonomi Nasional Dan Kesejahteraan Sosial Pada UUD 1945</h2>
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2022/10/14/pasal-dalam-uud-1945-yang-terkai-20221014091323.jpg" alt="Banner Image" class="banner-image">
+
+    </div>
+    <div class="team-section" id="section1-team">
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="darren.jpg" alt="Darren" class="team-member-photo">
+                <h4>Darren</h4>
+                <p class="role">Project Manager</p>
+                <p class="description">Darren oversees the project and ensures everything runs smoothly, coordinating efforts across all teams.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="cheryl.jpg" alt="Cheryl" class="team-member-photo">
+                <h4>Cheryl</h4>
+                <p class="role">Technical Lead</p>
+                <p class="description">Cheryl drives the technical development and implementation, ensuring quality and efficiency.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="jason.jpg" alt="Jason" class="team-member-photo">
+                <h4>Jason</h4>
+                <p class="role">Designer</p>
+                <p class="description">Jason creates stunning visuals and user experiences that captivate our audience.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="elevo.jpg" alt="Elevo" class="team-member-photo">
+                <h4>Elevo</h4>
+                <p class="role">Designer</p>
+                <p class="description">Elevo blends creativity with strategy to deliver impactful designs.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="reinwell.jpg" alt="Reinwell" class="team-member-photo">
+                <h4>Reinwell</h4>
+                <p class="role">Designer</p>
+                <p class="description">Reinwell crafts beautiful and user-friendly experiences with a focus on detail.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="reinwell.jpg" alt="Reinwell" class="team-member-photo">
+                <h4>Marcus</h4>
+                <p class="role">Designer</p>
+                <p class="description">Reinwell crafts beautiful and user-friendly experiences with a focus on detail.</p>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-section" id="section1-resources">
+        <h3>Additional Information</h3>
+        <ul class="info-list">
+            <li><strong>Feature 1:</strong> Detailed explanation of feature 1.</li>
+            <li><strong>Feature 2:</strong> Detailed explanation of feature 2.</li>
+            <li><strong>Feature 3:</strong> Detailed explanation of feature 3.</li>
+        </ul>
+
+        <section id="economy" class="content-section2">
+            <h2>Ekonomi Nasional dalam UUD 1945</h2>
+            <p>UUD 1945 menekankan pentingnya ekonomi nasional dan kesejahteraan sosial dalam pasal-pasalnya. Beberapa poin utama terkait tema ini antara lain:</p>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'tab1')">Pasal 27 : 2</button>
+                <button class="tab-button" onclick="openTab(event, 'tab2')">Pasal 33</button>
+                <button class="tab-button" onclick="openTab(event, 'tab3')">Pasal 34</button>
+                <button class="tab-button" onclick="openTab(event, 'tab4')">Pasal 28H</button>
+            </div>
+            <div id="tab1" class="tab-content active">
+                <b>"Tiap warga negara berhak atas pekerjaan dan penghidupan yang layak bagi kemanusiaan."</b>
+                <p>Pasal ini menegaskan bahwa setiap warga negara memiliki hak untuk mendapatkan pekerjaan dan penghidupan yang layak. Hal ini mencerminkan komitmen negara terhadap penyediaan kesempatan kerja dan kesejahteraan ekonomi bagi seluruh rakyat.</p>
+            </div>
+            <div id="tab2" class="tab-content">
+                <b>"1.Perekonomian disusun sebagai usaha bersama berdasar atas asas. <br>
+                    2.Cabang-cabang produksi yang penting bagi negara dan yang menguasai hajat hidup orang banyak dikuasai oleh negara. <br>
+                    3.Bumi dan air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh negara dan dipergunakan untuk sebesar-besar kemakmuran rakyat. <br>
+                    4.Perekonomian nasional diselenggarakan berdasar atas demokrasi ekonomi dengan prinsip kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, kemandirian, serta dengan menjaga keseimbangan kemajuan dan kesatuan ekonomi nasional. <br>
+                    5.Ketentuan lebih lanjut mengenai pelaksanaan pasal ini diatur dalam undang-undang."
+                </b>
+                <p>Pasal ini merupakan salah satu pasal yang paling penting dalam konteks ekonomi. Beberapa poin kunci dari pasal ini meliputi:
+                    <br>
+                    1. <span> Perekonomian sebagai usaha bersama:</span> Menggarisbawahi pentingnya kerja sama dalam perekonomian, dengan asas kekeluargaan.
+                    <br> 
+                    2. <span> Kepemilikan atas alat-alat produksi:</span> Pasal ini menyatakan bahwa bumi, air, dan kekayaan alam yang terkandung di dalamnya adalah milik negara dan digunakan untuk sebesar-besarnya kemakmuran rakyat. Ini menunjukkan bahwa sumber daya alam harus dikelola untuk kepentingan masyarakat, bukan hanya untuk kepentingan segelintir orang.</p>
+                  
+            </div>
+            <div id="tab3" class="tab-content">
+                <b>"1.Fakir miskin dan anak-anak yang terlantar dipelihara oleh negara. <br>
+                    2.Negara mengembangkan sistem jaminan sosial bagi seluruh rakyat dan memberdayakan masyarakat yang lemah dan tidak mampu sesuai dengan martabat kemanusiaan. <br>
+                   3. Negara bertanggung jawab atas penyediaan fasilitas pelayanan kesehatan dan fasilitas pelayanan umum yang layak. <br>
+                    4.Ketentuan lebih lanjut mengenai pelaksanaan pasal ini diatur dalam undang-undang."</b>
+                <p>Pasal ini menegaskan tanggung jawab negara untuk mengurus fakir miskin dan anak-anak yang terlantar. Ini menunjukkan bahwa kesejahteraan sosial adalah prioritas negara, dan memberikan dasar bagi kebijakan perlindungan sosial.</p>
+            </div>
+            <div id="tab4" class="tab-content">
+                <b>
+                    Setiap orang berhak hidup sejahtera lahir batin, bertempat tinggal, dan mendapatkan lingkungan hidup yang baik dan sehat serta berhak memperoleh pelayanan kesehatan.(1)
+                    <br>
+                    Setiap orang berhak mendapat kemudahan dan perlakuan khusus untuk memperoleh kesempatan dan manfaat yang sama guna mencapai persamaan dan keadilan.(2)
+                    <br>
+                 
+                    Setiap orang berhak atas jaminan sosial yang memungkinkan pengembangan dirinya secara utuh sebagai manusia yang bermartabat.(3)
+                    <br>
+          
+                    Setiap orang berhak mempunyai hak milik pribadi dan hak milik tersebut tidak boleh diambil alih secara sewenang-wenang oleh siapapun.(4)</b>
+                    <p>Mengatur hak setiap orang untuk hidup sejahtera, termasuk hak atas kesehatan, pendidikan, dan pelayanan sosial lainnya. Ini mendukung prinsip keadilan sosial dan pemerataan akses terhadap layanan dasar.</p>
+            </div>
+        </section>
+
+        <section id="kkn" class="content-section2">
+            <h2>Ketetapan MPR dan Penyelenggaraan Negara</h2>
+            <p>Ketetapan MPR merupakan pedoman penting dalam memastikan penyelenggaraan negara yang bersih dan efektif. Prinsip-prinsip ini menjadi landasan bagi pembangunan sistem pemerintahan yang transparan dan akuntabel. Berikut adalah tiga prinsip utama yang perlu diterapkan:</p>
+            
+            <div class="principles">
+                <div class="principle-item">
+                    <h3>Pembangunan Berkelanjutan</h3>
+                    <p>Meskipun tidak secara eksplisit disebutkan, prinsip pembangunan berkelanjutan yang memperhatikan aspek ekonomi, sosial, dan lingkungan dapat diinterpretasikan dalam kerangka UUD 1945. Hal ini penting untuk menjamin kesejahteraan jangka panjang bagi generasi mendatang.</p>
+                </div>
+                
+                <div class="principle-item">
+                    <h3>Keterlibatan Masyarakat</h3>
+                    <p>UUD 1945 juga menggarisbawahi pentingnya partisipasi masyarakat dalam pembangunan ekonomi dan sosial. Dalam konteks ini, masyarakat diharapkan untuk berperan aktif dalam proses pengambilan keputusan yang berdampak pada kehidupan mereka.</p>
+                </div>
+                
+                <div class="principle-item">
+                    <h3>Perlindungan Hak-Hak Ekonomi dan Sosial</h3>
+                    <p>Negara memiliki kewajiban untuk melindungi hak-hak ekonomi dan sosial warganya, termasuk dalam hal ketenagakerjaan, upah yang layak, dan kondisi kerja yang baik. Ini penting untuk menciptakan lingkungan yang kondusif bagi pertumbuhan ekonomi dan kesejahteraan sosial.</p>
+                </div>
+            </div>
+
+            <section id="conclusion" class="content-section2">
+                <h2>Kesimpulan</h2>
+                <p>Secara keseluruhan, UUD 1945 menegaskan bahwa ekonomi nasional dan kesejahteraan sosial adalah bagian integral dari tujuan negara. Semua upaya dalam bidang ekonomi harus diarahkan untuk menciptakan kesejahteraan bagi seluruh rakyat Indonesia, dengan penekanan pada keadilan, pemerataan, dan perlindungan terhadap yang lemah. Dengan prinsip-prinsip ini, diharapkan tercipta masyarakat yang sejahtera dan berkeadilan.</p>
+       
+            </section>
+        </main>
+        
+
+        <h3>Related Resources</h3>
+        <p>For further reading, check out these materials:</p>
+        <ul class="resource-list">
+            <li><a href="#">Resource 1</a></li>
+            <li><a href="#">Resource 2</a></li>
+            <li><a href="#">Resource 3</a></li>
+        </ul>
+    </div>
+ </div>
+</div>
+
+<!-- Repeat similar structure for Hidden Section 2 and Section 3 -->
+
+<!-- Hidden Section 2 -->
+<div class="hidden-section" id="section2">
+    <div class="nav-section">
+        <ul>
+            <li><a href="index.html" onclick="showCarousel()">Kmbali</a></li>
+            <li><a href="#section1">Overview</a></li>
+            <li><a href="#section1-team">Tim</a></li>
+            <li><a href="#section1-resources">Materi</a></li>
+        </ul>
+    </div>
+
+    <div >
+    <div class="banner-section">
+        <h2>ketetapan mpr tentang penyelenggaraan negara yang bersih dan bebas dari korupsi kolusi dan nepotisme (KKN)</h2>
+    
+
+    </div>
+
+<div class="content-section">
+   
+    <!-- Slideshow -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <h2>Ekonomi Nasional</h2>
+        <p>Menjelajahi dasar-dasar ekonomi dalam UUD 1945.</p>
+    </div>
+    <div class="mySlides fade">
+        <h2>Kesejahteraan Sosial</h2>
+        <p>Fokus pada keadilan sosial dan akses untuk semua.</p>
+    </div>
+    <div class="mySlides fade">
+        <h2>Pemberantasan KKN</h2>
+        <p>Langkah-langkah untuk mengatasi korupsi dan nepotisme.</p>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="navigation-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-button">Latar Belakang</button>
+        <div class="accordion-content">
+            <p>Ketetapan ini muncul sebagai reaksi terhadap praktik KKN yang meluas, yang berkontribusi pada krisis kepercayaan masyarakat terhadap pemerintah. Dalam konteks transisi politik setelah reformasi 1998, MPR menganggap penting untuk menetapkan kerangka kerja yang dapat menjamin bahwa penyelenggaraan negara dilakukan secara bersih dan transparan. Kondisi ekonomi yang buruk dan instabilitas politik menjadi pendorong utama untuk merumuskan kebijakan yang efektif.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-button">Prinsip-prinsip Dasar</button>
+        <div class="accordion-content">
+            <p> <b>Transparansi:</b> Menekankan pentingnya keterbukaan informasi dalam penyelenggaraan negara agar masyarakat dapat ikut mengawasi jalannya pemerintahan. <br>
+                 <b>Akuntabilitas:</b> Semua penyelenggara negara harus mempertanggungjawabkan tindakan dan keputusan mereka kepada rakyat.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-button">Pencegahan KKN</button>
+        <div class="accordion-content">
+            <p> <b>Kebijakan Anti-KKN: </b>Pemerintah diwajibkan untuk merumuskan dan menerapkan kebijakan yang konkret untuk mencegah terjadinya praktik KKN di semua lapisan pemerintahan. <br>
+                <b>Sanksi Tegas: </b>Penerapan sanksi yang tegas bagi pelaku KKN sebagai upaya untuk memberikan efek jera.</p>
+        </div>
+    </div>
+</div>
+
+ 
+</div>
+
+    
+    <div class="content-section" id="section1-resources">
+
+        <section id="economy" class="content-section2">
+            <h2>KETETAPAN
+                MPR REPUBLIK INDONESIA <br>
+                NOMOR XI/MPR/1998 </h2>
+            <p>
+                Ketetapan MPR No. XI/MPR/1998 tentang Penyelenggaraan Negara yang Bersih dan Bebas dari Korupsi, Kolusi, dan Nepotisme (KKN) terdiri dari beberapa poin penting yang dapat dianggap sebagai pasal. Berikut adalah beberapa poin kunci yang diatur dalam ketetapan tersebut:</p>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'tab21')">Pasal 1</button>
+                <button class="tab-button" onclick="openTab(event, 'tab22')">Pasal 2</button>
+                <button class="tab-button" onclick="openTab(event, 'tab23')">Pasal 3</button>
+                <button class="tab-button" onclick="openTab(event, 'tab24')">Pasal 4</button>
+                <button class="tab-button" onclick="openTab(event, 'tab256')">Pasal 5, 6.</button>
+              
+            </div>
+            <div id="tab21" class="tab-content active">
+                <b>"Majelis Permusyawaratan Rakyat Republik Indonesia berketetapan untuk memfungsikan secara
+                    proporsional dan benar Lembaga Tertinggi Negara, Lembaga Kepresidenan dan Lembagalembaga Tinggi Negara lainnya, sehingga penyelenggaraan negara berlangsung sesuai dengan
+                    Undang Undang Dasar 1945 "</b>
+                <p>Pasal ini menegaskan bahwa setiap warga negara memiliki hak untuk mendapatkan pekerjaan dan penghidupan yang layak. Hal ini mencerminkan komitmen negara terhadap penyediaan kesempatan kerja dan kesejahteraan ekonomi bagi seluruh rakyat.</p>
+            </div>
+            <div id="tab22" class="tab-content">
+                <b>"(1) Penyelenggara negara pada Lembaga-lembaga eksekutif, legislatif, dan yudikatif harus
+                    melaksanakan fungsi dan tugasnya dengan baik dan bertanggung jawab kepada masyarakat,
+                    bangsa, dan negara. <br>
+                    (2) Untuk menjalankan fungsi dan tugasnya tersebut, penyelenggara negara harus jujur, adil,
+                    terbuka, dan terpercaya serta mampu membebaskan diri dari praktek korupsi, kolusi dan
+                    nepotisme."
+                </b>
+                <p>Pasal ini Menetapkan bahwa setiap penyelenggara negara wajib menjunjung tinggi integritas dan menghindari praktik KKN.</p>
+                  
+            </div>
+            <div id="tab23" class="tab-content">
+                <b>"(1) Untuk menghindarkan praktek-praktek korupsi, kolusi, dan nepotisme, seseorang yang
+                    dipercaya menjabat suatu jabatan dalam penyelenggaraan negara harus bersumpah sesuai
+                    dengan agamanya, harus mengumumkan dan bersedia diperiksa kekayaannya sebelum dan
+                    setelah menjabat. <br>
+                    (2) Pemeriksaan atas kekayaan sebagaimana dimaksud pada ayat (1) di atas dilakukan oleh
+                    suatu lembaga yang dibentuk oleh Kepala Negara yang keanggotaannya terdiri dari
+                    pemerintah dan masyarakat. <br>
+                    (3) Upaya pemberantasan tindak pidana korupsi dilakukan secara tegas dengan melaksanakan
+                    secara konsisten undang-undang tindak pidana korupsi. "</b>
+                <p>Pasal ini Mengharuskan pemerintah untuk merumuskan dan melaksanakan kebijakan yang dapat mencegah dan memberantas KKN secara efektif.</p>
+            </div>
+            <div id="tab24" class="tab-content">
+                <b>Upaya pemberantasan korupsi, kolusi, dan nepotisme harus dilakukan secara tegas terhadap
+                    siapapun juga, baik pejabat negara, mantan pejabat negara, keluarga, dan kroninya maupun
+                    pihak swasta/konglemerat termasuk mantan Presiden Soeharto dengan tetap memperhatikan
+                    prinsip praduga tak bersalah dan hak-hak azasi manusia. </b>
+                    <p>Mengatur hak setiap orang untuk hidup sejahtera, termasuk hak atas kesehatan, pendidikan, dan pelayanan sosial lainnya. Ini mendukung prinsip keadilan sosial dan pemerataan akses terhadap layanan dasar.</p>
+            </div>
+            <div id="tab256" class="tab-content">
+                <b> Pasal 5 <br>
+
+                    Ketentuan sebagaimana dimaksud dalam Ketetapan ini diatur lebih lanju dengan undang-undang. <br>
+                    Pasal 6 <br>
+                    Ketetapan ini mulai berlaku pada tanggal ditetapkan.</b>
+                    <p>Mengatur hak setiap orang untuk hidup sejahtera, termasuk hak atas kesehatan, pendidikan, dan pelayanan sosial lainnya. Ini mendukung prinsip keadilan sosial dan pemerataan akses terhadap layanan dasar.</p>
+            </div>
+        </section>
+
+        <section id="kkn" class="content-section2">
+            <h2>Ketetapan MPR dan Penyelenggaraan Negara</h2>
+            <p>Ketetapan MPR merupakan pedoman penting dalam memastikan penyelenggaraan negara yang bersih dan efektif. Prinsip-prinsip ini menjadi landasan bagi pembangunan sistem pemerintahan yang transparan dan akuntabel. Berikut adalah tiga prinsip utama yang perlu diterapkan:</p>
+            
+            <div class="principles">
+                <div class="principle-item">
+                    <h3>Penguatan Lembaga Pengawas</h3>
+                    <p>
+                       <b> Badan Pemeriksa Keuangan (BPK): </b>Ditekankan peran BPK dalam melakukan audit dan pemeriksaan laporan keuangan pemerintah untuk memastikan tidak ada penyimpangan. <br>
+                       <b> Komisi Pemberantasan Korupsi (KPK):</b> KPK harus diperkuat dengan wewenang dan sumber daya yang memadai untuk melakukan penyidikan dan penuntutan terhadap kasus-kasus korupsi. <br>
+                       <b>    Peran Masyarakat:</b> Masyarakat harus dilibatkan dalam proses pengawasan dengan mekanisme pelaporan dan partisipasi dalam pemantauan kebijakan publik. <br>
+                    </p>
+                </div>
+                
+                <div class="principle-item">
+                    <h3>Pendidikan dan Kesadaran</h3>
+                    <p> <b>  Pendidikan Anti-KKN:</b> Diperlukan program pendidikan yang mengedukasi masyarakat tentang bahaya KKN, baik di institusi pendidikan formal maupun melalui kampanye sosial. <br>
+                        <b> Kesadaran Publik:</b> Masyarakat harus menyadari hak dan kewajiban mereka dalam menjaga integritas pemerintah serta memahami mekanisme pengaduan jika menemukan praktik KKN.</p>
+                </div>
+                
+                <div class="principle-item">
+                    <h3>Reformasi Kebijakan</h3>
+                    <p> <b> Perbaikan Sistem Administrasi: </b>  Reformasi diperlukan dalam sistem administrasi publik untuk meningkatkan efisiensi dan transparansi, termasuk digitalisasi proses administrasi.
+                        <b>Pengelolaan Anggaran:</b> Memastikan bahwa penggunaan anggaran negara dilakukan secara efektif dan efisien serta bebas dari korupsi.
+                        <b>Penataan Ulang Jabatan: </b>Proses rekrutmen dan penempatan jabatan dalam pemerintahan harus dilakukan berdasarkan meritokrasi, tanpa adanya unsur nepotisme.</p>
+                </div>
+            </div>
+
+            <section id="conclusion" class="content-section2">
+                <h2>Kesimpulan</h2>
+                <p>Ketetapan MPR Nomor XI/MPR/1998 menjadi dasar penting dalam mewujudkan pemerintahan yang bersih, transparan, dan akuntabel. Implementasinya diharapkan dapat mendukung pencapaian tujuan-tujuan ekonomi yang adil dan kesejahteraan bagi seluruh rakyat Indonesia.</p>
+       
+            </section>
+        </main>
+        
+
+        <h3>Related Resources</h3>
+        <p>For further reading, check out these materials:</p>
+        <ul class="resource-list">
+            <li><a href="#">Resource 1</a></li>
+            <li><a href="#">Resource 2</as></li>
+            <li><a href="#">Resource 3</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Hidden Section 3 -->s
+<div class="hidden-section" id="section3">
+    <div class="nav-section">
+        <ul>
+            <li><a href="index.html" onclick="showCarousel()">Kmbali</a></li>
+            <li><a href="#section1">Overview</a></li>
+            <li><a href="#section1-team">Tim</a></li>
+            <li><a href="#section1-resources">Materi</a></li>
+        </ul>
+    </div>
+
+  
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
